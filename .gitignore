@@ -130,4 +130,6 @@ dmypy.json
 
 # local
 serverless_python_tutorial/*
+serverless_python_tutorial_38/*
 dynamodb_local_latest/*
+*.json
