@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # local
-serverless_python_tutorial/*
-serverless_python_tutorial_38/*
-dynamodb_local_latest/*
-*.json
+application/serverless_python_tutorial/*
+application/serverless_python_tutorial_38/*
+application/dynamodb_local_latest/*
+application/*.json
