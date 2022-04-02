@@ -1,3 +1,4 @@
+from crypt import methods
 from typing import Text
 from flask import request, redirect, url_for, render_template, flash, session
 from flask_blog import app
@@ -10,7 +11,7 @@ from datetime import datetime
 def show_entries() -> Text:
     entries = Entry.scan()
     entries = sorted(entries, key=lambda x: x.id, reverse=True)
-    return render_template('entries/index.html', entries=entries)
+    return render_template('entries/index.html', entries=entries, test='test')
 
 @app.route('/entries', methods=['POST'])
 @login_required
@@ -58,3 +59,8 @@ def delete_entry(id) -> Text:
     entry.delete()
     flash('記事が削除されました')
     return redirect(url_for('show_entries'))
+
+@app.route('/entries/test', methods=['GET'])
+@login_required
+def test() -> Text:
+    return render_template('entries/index.html', test='aaaa')

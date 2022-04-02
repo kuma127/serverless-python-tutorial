@@ -14,7 +14,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# lib/
 lib64/
 parts/
 sdist/
@@ -130,6 +130,6 @@ dmypy.json
 
 # local
 application/serverless_python_tutorial/*
-application/serverless_python_tutorial_38/*
+application/serverless_python38/*
 application/dynamodb_local_latest/*
 application/*.json

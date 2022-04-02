@@ -33,3 +33,11 @@ Stack 'serverless-pyth-dev' does not exist
 
 こんなエラーがでた  
 どうやらZappaCLI使ってる時に起動ファイルの設定でスペルミスがあった模様
+
+## DynamoDBローカルの立ち上げ方
+
+dynamodb_local_latestフォルダに移動してから実行
+
+```shell
+$ java "-Djava.library.path=./DynamoDBLocal_lib" -jar DynamoDBLocal.jar -sharedDb
+```
